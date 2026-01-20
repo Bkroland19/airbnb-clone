@@ -1,0 +1,53 @@
+
+> dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Using webpack 5. Reason: Enabled by default https://nextjs.org/docs/messages/webpack5
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:101:19)
+    at Object.createHash (node:crypto:139:10)
+    at BulkUpdateDecorator.hashFactory (/app/node_modules/next/dist/compiled/webpack/bundle5.js:138458:18)
+    at BulkUpdateDecorator.update (/app/node_modules/next/dist/compiled/webpack/bundle5.js:138359:50)
+    at OriginalSource.updateHash (/app/node_modules/next/dist/compiled/webpack-sources3/index.js:1:10264)
+    at NormalModule._initBuildHash (/app/node_modules/next/dist/compiled/webpack/bundle5.js:67986:17)
+    at handleParseResult (/app/node_modules/next/dist/compiled/webpack/bundle5.js:68052:10)
+    at /app/node_modules/next/dist/compiled/webpack/bundle5.js:68146:4
+    at processResult (/app/node_modules/next/dist/compiled/webpack/bundle5.js:67861:11)
+    at /app/node_modules/next/dist/compiled/webpack/bundle5.js:67925:5
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:101:19)
+    at Object.createHash (node:crypto:139:10)
+    at BulkUpdateDecorator.hashFactory (/app/node_modules/next/dist/compiled/webpack/bundle5.js:138458:18)
+    at BulkUpdateDecorator.update (/app/node_modules/next/dist/compiled/webpack/bundle5.js:138359:50)
+    at OriginalSource.updateHash (/app/node_modules/next/dist/compiled/webpack-sources3/index.js:1:10264)
+    at NormalModule._initBuildHash (/app/node_modules/next/dist/compiled/webpack/bundle5.js:67986:17)
+    at handleParseResult (/app/node_modules/next/dist/compiled/webpack/bundle5.js:68052:10)
+    at /app/node_modules/next/dist/compiled/webpack/bundle5.js:68146:4
+    at processResult (/app/node_modules/next/dist/compiled/webpack/bundle5.js:67861:11)
+    at /app/node_modules/next/dist/compiled/webpack/bundle5.js:67925:5
+node:internal/crypto/hash:101
+  this[kHandle] = new _Hash(algorithm, xofLen, algorithmId, getHashCache());
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:101:19)
+    at Object.createHash (node:crypto:139:10)
+    at BulkUpdateDecorator.hashFactory (/app/node_modules/next/dist/compiled/webpack/bundle5.js:138458:18)
+    at BulkUpdateDecorator.update (/app/node_modules/next/dist/compiled/webpack/bundle5.js:138359:50)
+    at OriginalSource.updateHash (/app/node_modules/next/dist/compiled/webpack-sources3/index.js:1:10264)
+    at NormalModule._initBuildHash (/app/node_modules/next/dist/compiled/webpack/bundle5.js:67986:17)
+    at handleParseResult (/app/node_modules/next/dist/compiled/webpack/bundle5.js:68052:10)
+    at /app/node_modules/next/dist/compiled/webpack/bundle5.js:68146:4
+    at processResult (/app/node_modules/next/dist/compiled/webpack/bundle5.js:67861:11)
+    at /app/node_modules/next/dist/compiled/webpack/bundle5.js:67925:5 {
+  opensslErrorStack: [
+    'error:03000086:digital envelope routines::initialization error',
+    'error:0308010C:digital envelope routines::unsupported'
+  ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v22.21.1

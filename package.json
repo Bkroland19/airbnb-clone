@@ -1,12 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.4",
+    "firebase": "^12.8.0",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
